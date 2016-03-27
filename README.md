@@ -6,6 +6,10 @@ Factor graph and (loopy) believe propagation in Lua. For reference:
 - [Factor Graphs and Algorithms](http://www.psi.toronto.edu/~psi/pubs2/1999%20and%20before/134.pdf) by Frey et al.
 - [Factor Graphs and the Sum-Product Algorithm](http://vision.unipv.it/IA2/Factor%20graphs%20and%20the%20sum-product%20algorithm.pdf) by Kshischang et al.
 
+# Dependencies
+
+- [torchlib](https://github.com/vzhong/torchlib)
+
 # Installation
 
 You can install `factorgraph` as follows:
