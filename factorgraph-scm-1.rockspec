@@ -7,9 +7,9 @@ source = {
 }
 
 description = {
-  summary = "Factor graph and believe propagation in Lua",
+  summary = "Factor graph and belief propagation in Lua",
   detailed = [[
-    Factor graph and (loopy) believe probagation in Lua.
+    Factor graph and (loopy) belief probagation in Lua.
   ]],
   homepage = "https://github.com/vzhong/factorgraph"
 }
