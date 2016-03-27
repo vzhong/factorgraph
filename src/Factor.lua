@@ -26,6 +26,10 @@ function Factor:__init(prob, connections, name, convergence)
   end
 end
 
+function Factor:__tostring__()
+  return torch.type(self)..'('..self.name..')\n'..tostring(self.factor)
+end
+
 --[[ Resets the node. ]]
 function Factor:reset()
   Parent.reset(self)

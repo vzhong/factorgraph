@@ -9,6 +9,12 @@ function Variable:__init(n_states, name, convergence)
   self.observed_state = nil
 end
 
+function Variable:__tostring__()
+  local s = torch.type(self)..'('..self.name..'|'..self.n_states..')'
+  if self.observed_state then s = s..'='..self.observed_state end
+  return s
+end
+
 --[[ Returns a probability table initialized to 1 of a size equal to this variable.
 By default, `fill` is 1.
 --]]
@@ -21,10 +27,10 @@ function Variable:reset()
   Parent.reset(self)
   self.observed_state = nil
   for node, message in pairs(self.incoming) do
-    message = self:uniform_message()
+    self.incoming[node] = self:uniform_message()
   end
   for node, message in pairs(self.outgoing) do
-    message = self:uniform_message()
+    self.outgoing[node] = self:uniform_message()
     self.prev_outgoing[node] = nil
   end
 end

@@ -25,7 +25,7 @@ end
 
 --[[ Resets and empties the incoming and outgoing buffers. ]]
 function Node:reset()
-  self:enable()
+  self.enabled = true
 end
 
 --[[ Receives a message from a node. ]]

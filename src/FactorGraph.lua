@@ -46,10 +46,15 @@ function Graph:marginals()
   local marginals = {}
   for _, var in ipairs(self.variables) do
     if var.enabled then
-      marginals[var.name] = var:marginal():normalize()
+      marginals[var] = var:marginal():normalize()
     end
   end
   return marginals
+end
+
+--[[ Reset all nodes. ]]
+function Graph:reset()
+  for _, node in ipairs(self.all) do node:reset() end
 end
 
 return Graph
