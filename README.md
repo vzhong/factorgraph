@@ -18,7 +18,7 @@ You can install `factorgraph` as follows:
 
 # Usage
 
-Torchlib is namespaced locally. To use it:
+This package is namespaced. To use it:
 
 ```lua
 local fg = require 'factorgraph'
