@@ -32,7 +32,7 @@ local P_a_given_b = fg.Factor(torch.Tensor{{0.2, 0.8}, {0.4, 0.6}, {0.1, 0.9}}, 
 
 local g = fg.Graph({a, b}, {P_a_given_b, P_b})
 
-print('converged in '..g:forward({max_iter=10})..' iterations')
+print('converged in '..g:forward{max_iter=10}..' iterations')
 for node, p in pairs(g:marginals()) do
   print(p)
 end
