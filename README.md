@@ -37,3 +37,7 @@ for node, p in pairs(g:marginals()) do
   print(p)
 end
 ```
+
+# Contribution
+
+Pull requests welcome!
