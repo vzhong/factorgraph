@@ -44,7 +44,7 @@ end
 
 --[[ Combine messages by summing and multiplying. ]]
 function Factor:forward()
-  if self.enabled and self.observed_state == nil then
+  if self.enabled then
     self:next()
     for o, out_message in pairs(self.outgoing) do
       out_message = self.factor
