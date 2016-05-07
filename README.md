@@ -14,7 +14,7 @@ Factor graph and (loopy) belief propagation in Lua. For reference:
 
 You can install `factorgraph` as follows:
 
-`git clone https://github.com/vzhong/factorgraph.git && cd torchlib && luarocks make`
+`git clone https://github.com/vzhong/factorgraph.git && cd factorgraph && luarocks make`
 
 # Usage
 
